@@ -1,0 +1,24 @@
+# Protección del directorio API
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Bloquear acceso directo a archivos sensibles
+    RewriteRule ^(.*\.log)$ - [F,L]
+    RewriteRule ^(.*\.md)$ - [F,L]
+    # Proteger archivo de configuración SMTP (opcional, recomendado)
+    # RewriteRule ^smtp_config\.php$ - [F,L]
+</IfModule>
+
+# Deshabilitar listado de directorios
+Options -Indexes
+
+# Protección contra inyección
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Límite de tamaño de archivo (en PHP se debe configurar también)
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+

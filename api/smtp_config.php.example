@@ -1,0 +1,22 @@
+<?php
+/**
+ * Configuración SMTP
+ * LegisAudit - Consultoría Jafet
+ * 
+ * INSTRUCCIONES:
+ * 1. Copia este archivo como 'smtp_config.php'
+ * 2. Completa con tus credenciales SMTP
+ */
+
+return [
+    'host' => 'mail.tu-dominio.com', // Servidor SMTP del hosting
+    'port' => 587, // Puerto 587 para TLS
+    'username' => 'tu-email@tu-dominio.com',
+    'password' => 'tu_contraseña_smtp',
+    'from_email' => 'tu-email@tu-dominio.com',
+    'from_name' => 'LegisAudit - Plataforma Legal',
+    'to_email' => 'email-de-recepcion@gmail.com', // Email de recepción
+    'encryption' => 'tls', // TLS para puerto 587
+    'timeout' => 30,
+    'use_native_mail' => false // El sistema detecta automáticamente si SMTP no funciona y usa mail() nativo
+];
