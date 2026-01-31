@@ -1,0 +1,22 @@
+/**
+ * Configuración SMTP para Node.js
+ * LegisAudit - Consultoría Jafet
+ * 
+ * INSTRUCCIONES:
+ * 1. Copia este archivo como 'smtp_config.js'
+ * 2. Completa con tus credenciales SMTP
+ * 3. O usa variables de entorno (recomendado)
+ */
+
+export default {
+  host: 'mail.tu-dominio.com',
+  port: 587,
+  username: 'tu-email@tu-dominio.com',
+  password: 'tu_contraseña_smtp',
+  from_email: 'tu-email@tu-dominio.com',
+  from_name: 'LegisAudit - Plataforma Legal',
+  to_email: 'email-de-recepcion@gmail.com',
+  encryption: 'tls',
+  timeout: 30,
+  use_native_mail: false
+};

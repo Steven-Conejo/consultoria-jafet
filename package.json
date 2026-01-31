@@ -8,13 +8,24 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:server": "node server.js",
+    "dev:full": "run-p dev dev:server",
     "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
     "build-only": "vite build",
+    "start": "node server.js",
+    "preview": "vite preview",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix --cache"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.5",
+    "nodemailer": "^6.9.16",
     "pinia": "^3.0.4",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"

@@ -2,6 +2,8 @@
 
 Plataforma de vanguardia para la auditoría y seguridad de instrumentos legales. Servicio gratuito orientado a jóvenes y adultos para revisar y auditar contratos de arrendamiento y anticrético, identificando cláusulas abusivas.
 
+> **Nota**: Este proyecto ahora soporta tanto **PHP** (versión original) como **Node.js** (versión nueva). Ver [README_NODEJS.md](./README_NODEJS.md) para la versión Node.js.
+
 ## 🚀 Características
 
 - **Revisión Gratuita de Contratos**: Servicio completamente gratuito para revisar contratos legales

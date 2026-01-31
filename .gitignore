@@ -50,6 +50,8 @@ composer.lock
 # Configuración sensible (credenciales)
 api/db_config.php
 api/smtp_config.php
+server/api/db_config.js
+server/api/smtp_config.js
 api/.env
 .env
 .env.local

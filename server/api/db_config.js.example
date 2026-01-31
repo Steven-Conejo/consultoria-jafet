@@ -1,0 +1,17 @@
+/**
+ * Configuración de Base de Datos para Node.js
+ * LegisAudit - Consultoría Jafet
+ * 
+ * INSTRUCCIONES:
+ * 1. Copia este archivo como 'db_config.js'
+ * 2. Completa con tus credenciales de base de datos
+ * 3. O usa variables de entorno (recomendado)
+ */
+
+export default {
+  host: 'localhost',
+  dbname: 'nombre_de_tu_base_de_datos',
+  username: 'tu_usuario',
+  password: 'tu_contraseña',
+  charset: 'utf8mb4'
+};
