@@ -12,6 +12,7 @@
     "dev:full": "run-p dev dev:server",
     "build": "vite build",
     "build:check": "vue-tsc --build && vite build",
+    "postinstall": "echo 'Dependencias instaladas'",
     "start": "node server.js",
     "preview": "vite preview",
     "type-check": "vue-tsc --build",
@@ -27,6 +28,7 @@
     "mysql2": "^3.11.5",
     "nodemailer": "^6.9.16",
     "pinia": "^3.0.4",
+    "vite": "^7.3.0",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
   },
@@ -41,7 +43,6 @@
     "jiti": "^2.6.1",
     "npm-run-all2": "^8.0.4",
     "typescript": "~5.9.3",
-    "vite": "^7.3.0",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vue-tsc": "^3.2.1"
   }
