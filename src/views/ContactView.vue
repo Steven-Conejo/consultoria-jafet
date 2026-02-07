@@ -177,7 +177,7 @@ const handleSubmit = async () => {
       formData.append('file', selectedFile.value)
     }
 
-    const response = await fetch(apiUrl('/contact.php'), {
+    const response = await fetch(apiUrl('/contact'), {
       method: 'POST',
       body: formData
     })
