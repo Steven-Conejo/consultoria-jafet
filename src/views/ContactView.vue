@@ -271,11 +271,13 @@ const handleSubmit = async () => {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #dc2626;
 }
 
 .contact-hero .subtitle {
   font-size: 20px;
   opacity: 0.9;
+  color: #dc2626;
 }
 
 .container {
