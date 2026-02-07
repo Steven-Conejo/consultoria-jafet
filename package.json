@@ -16,7 +16,9 @@
     "start": "node server.js",
     "preview": "vite preview",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix --cache"
+    "lint": "eslint . --fix --cache",
+    "render-build": "npm install && npm run build",
+    "render-start": "node server.js"
   },
   "dependencies": {
     "@tsconfig/node24": "^24.0.3",
