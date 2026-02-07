@@ -13,7 +13,7 @@
     "build": "vite build",
     "build:check": "vue-tsc --build && vite build",
     "postinstall": "echo 'Dependencias instaladas'",
-    "start": "node server.js",
+    "start": "node --version && node server.js",
     "preview": "vite preview",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix --cache",
